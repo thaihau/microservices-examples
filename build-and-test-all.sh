@@ -2,7 +2,8 @@
 
 set -e
 
-export DOCKER_HOST_IP=$(boot2docker ip)
+#Change original boot2docker ip to docker-machine ip
+export DOCKER_HOST_IP=$(docker-machine ip default)
 
 docker-compose up -d --no-recreate rabbitmq mongodb
 

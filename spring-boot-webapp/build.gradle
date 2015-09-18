@@ -5,7 +5,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.4.RELEASE")
-        classpath "io.spring.gradle:dependency-management-plugin:0.4.0.RELEASE"
+        classpath "io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE"
 
     }
 }
@@ -30,7 +30,8 @@ dependencies {
 
 //    compile 'org.springframework.cloud:spring-cloud-starter-config'
     compile 'org.springframework.cloud:spring-cloud-starter-eureka'
-    compile 'org.webjars:bootstrap:3.1.1'
+    compile 'org.webjars:jquery-validation:1.11.1'
+    compile 'org.webjars:jquery:2.1.1'
     compile 'org.webjars:jquery-validation:1.11.1'
     compile 'javax.validation:validation-api:1.1.0.Final'
     compile 'org.hibernate:hibernate-validator:5.0.3.Final'
@@ -48,5 +49,5 @@ repositories {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.4'
+    gradleVersion = '2.7'
 }
